@@ -7,7 +7,7 @@ namespace EmployeeWages
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage");
+            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage\n6:UC6 Employee wage");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -39,6 +39,12 @@ namespace EmployeeWages
                     Random random4 = new Random();
                     int empCheck4 = random4.Next(0, 3);
                     EmployeeWagesUC5.EmployeeUC5(empCheck4);
+                    break;
+
+                case 6:
+                    Random random5 = new Random();
+                    int empCheck5 = random5.Next(0, 3);
+                    EmployeeWagesUC6.EmployeeUC6(empCheck5);
                     break;
                 }
             }
