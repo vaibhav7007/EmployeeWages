@@ -7,7 +7,7 @@ namespace EmployeeWages
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage\n6:UC6 Employee wage\n7:Refactor Employee wage UC7");
+            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage\n6:UC6 Employee wage");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
