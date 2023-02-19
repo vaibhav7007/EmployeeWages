@@ -7,7 +7,7 @@ namespace EmployeeWages
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage\n6:UC6 Employee wage\n7:Refactor Employee wage UC7\n8:Refactor to compute multiple company wages");
+            Console.WriteLine("1:UC1 Employee is present or absent\n2:UC2 Employee Wage\n3:UC3 Employee Wgaes\n4:UC4 Employee wage\n5:UC5 Employee wage\n6:UC6 Employee wage\n7:Refactor Employee wage UC7\n8:Refactor to compute multiple company wages\n9:Compute total wages for every company");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -55,6 +55,15 @@ namespace EmployeeWages
                 case 8:
                     EmployeeWagesUC8.EmployeeUC8("Jio", 20, 2, 10);
                     EmployeeWagesUC8.EmployeeUC8("Airtel", 10, 4, 20);
+                    break;
+
+                case 9:
+                    EmployeeWagesUC9 Jio = new EmployeeWagesUC9("Jio", 20, 2, 10);
+                    EmployeeWagesUC9 Airtel = new EmployeeWagesUC9("Airtel", 10, 4, 20);
+                    Jio.EmployeeUC9();
+                    Console.WriteLine(Jio.ToString());
+                    Airtel.EmployeeUC9();
+                    Console.WriteLine(Airtel.ToString());
                     break;
 
             }
