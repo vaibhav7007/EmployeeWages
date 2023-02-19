@@ -46,7 +46,13 @@ namespace EmployeeWages
                     int empCheck5 = random5.Next(0, 3);
                     EmployeeWagesUC6.EmployeeUC6(empCheck5);
                     break;
-                }
+                case 7:
+                    Random random6 = new Random();
+                    int empCheck6 = random6.Next(0, 3);
+                    EmployeeWagesUC6.EmployeeUC6(empCheck6);
+                    break;
+
+            }
             }
     }
 }
